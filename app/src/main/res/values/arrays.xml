@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_task_options">
+        <item>@string/task_not_done</item>
+        <item>@string/task_incomplete</item>
+        <item>@string/task_complete</item>
+    </string-array>
+
+    <string-array name="array_time_options">
+        <item>@string/threeHours</item>
+        <item>@string/fiveHours</item>
+        <item>@string/sevenHours</item>
+    </string-array>
+</resources>

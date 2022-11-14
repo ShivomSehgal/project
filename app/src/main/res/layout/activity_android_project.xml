@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebkcg"
+    tools:context=".AndroidProject">
+
+    <ListView
+        android:id="@+id/androidList"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:choiceMode="multipleChoice"
+        android:drawableEnd="@drawable/ic_baseline_api_24"
+        android:paddingTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <Button
+        android:id="@+id/enigmaButtonForIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_bkcg"
+        android:drawableLeft="@drawable/ic_baseline_api_24"
+        android:padding="16dp"
+        android:text="Enigma : Sample Android App "
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/copyrightId"
+        style="@style/Theme.AppCompat.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="@font/aldrich"
+
+        android:gravity="center"
+        android:paddingTop="60dp"
+        android:text="© 2022 Shivom Sehgal. All rights reserved."
+        android:textAllCaps="false"
+
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:theme="@style/Theme.AppCompat.DayNight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/userInterface"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="99dp"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud834"
+        android:paddingTop="35dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/userInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud836"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/userInterface"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/multiscreenApps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud839"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/userInput"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/networking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud843"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/multiscreenApps"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/developingAndroidApps"
+        android:layout_width="wrap_content"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud851"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/networking"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/firebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="https://classroom.udacity.com/courses/ud0352"
+        android:onClick="openBrowser"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/developingAndroidApps"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/materialDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:tag="https://classroom.udacity.com/courses/ud862"
+        android:onClick="openBrowser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/firebase"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

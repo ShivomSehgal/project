@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebkcg"
+    tools:context=".CoreFundamentals">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5B040303"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/Theme.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#000000"
+                android:orientation="vertical"
+                android:theme="@style/Theme.AppCompat.DayNight"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+
+                    style="@style/MaterialAlertDialog.Material3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Important Data Structures and Algorithms Questions\n for Interview Preparation"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="italic"
+                    android:theme="@style/Theme.AppCompat.DayNight" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/aldrich"
+                    android:paddingTop="5dp"
+
+                    android:paddingBottom="25dp"
+                    android:text="Asked In - Amazon, D.E. Shaw Group, Microsoft, Google ,Adobe, Atlassian, Uber, Coinbase\n and many more ..."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/binaryTreeDsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:fontFamily="@font/aldrich"
+                    android:linksClickable="true"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:text="binary tree"
+                    android:textAllCaps="true"
+                    android:textColorLink="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/GraphDsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:fontFamily="@font/aldrich"
+                    android:linksClickable="true"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:text="Graph"
+                    android:textAllCaps="true"
+                    android:textColorLink="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/dailyTestLinkedList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:fontFamily="@font/aldrich"
+                    android:linksClickable="true"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:text="Linked List"
+                    android:textAllCaps="true"
+                    android:textColorLink="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/dailyTestStack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:fontFamily="@font/aldrich"
+                    android:linksClickable="true"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:text="Stack and Queue "
+                    android:textAllCaps="true"
+                    android:textColorLink="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/dailyTestHeap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:fontFamily="@font/aldrich"
+                    android:linksClickable="true"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:text="Heap"
+                    android:textAllCaps="true"
+                    android:textColorLink="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/dailyTestArray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:fontFamily="@font/aldrich"
+                    android:linksClickable="true"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:text="Array"
+                    android:textAllCaps="true"
+                    android:textColorLink="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/dailyTestBacktracking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:fontFamily="@font/aldrich"
+                    android:linksClickable="true"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:text="backtracking"
+                    android:textAllCaps="true"
+                    android:textColorLink="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                </LinearLayout>
+                <Button
+                    android:id="@+id/dailyTestDynamicProgramming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:fontFamily="@font/aldrich"
+                    android:linksClickable="true"
+                    android:padding="16dp"
+                    android:paddingTop="10dp"
+                    android:text="Dynamic Programming"
+                    android:textAllCaps="true"
+                    android:textColorLink="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>

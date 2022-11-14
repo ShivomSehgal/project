@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebkcg"
+    tools:context=".CoreFundamentals">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5B040303"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/Theme.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#000000"
+                android:orientation="vertical"
+                android:theme="@style/Theme.AppCompat.DayNight"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/titleId"
+
+                style="@style/MaterialAlertDialog.Material3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="30dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Living in the past follows you, living in the future hollows you but living in the present powers you"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:theme="@style/Theme.AppCompat.DayNight" />
+
+            <TextView
+                android:id="@+id/authorId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:fontFamily="@font/aldrich"
+                android:paddingTop="5dp"
+                android:paddingBottom="60dp"
+                android:text="- SSehgal"
+                android:textColor="#FFFFFF"
+                android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/operatingSystem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:linksClickable="true"
+                    android:drawableLeft="@drawable/ic_baseline_data_usage_24"
+                    android:padding="16dp"
+                    android:text="Operating System"
+                    android:textAllCaps="true"
+                    android:textSize="18dp"
+                    android:textColorLink="@color/white"
+                    android:fontFamily="@font/aldrich"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="       "
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/operatingSystemMcq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/operating_System"
+                        android:textSize="16dp"
+                        android:textColorLink="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:textAllCaps="true"
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="               "
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/operatingSystemCheatsheet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/operating_SystemCs"
+                        android:textAllCaps="true"
+                        android:textSize="16dp"
+                        android:textColorLink="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+                        android:linksClickable="true"
+                        ></TextView>
+
+
+
+
+                </LinearLayout>
+
+
+            <Button
+                android:id="@+id/DatabaseManagement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textStyle="bold"
+
+                android:textSize="18dp"
+                android:textColorLink="@color/white"
+                android:fontFamily="@font/aldrich"
+                android:drawableLeft="@drawable/ic_baseline_data_usage_24"
+                android:background="@drawable/input_bkcg"
+                android:text="database management"
+                android:textAllCaps="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="       "
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/databaseMcq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/database"
+                        android:textSize="16dp"
+                        android:textColorLink="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:textAllCaps="true"
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="               "
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/databaseCheatsheet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/databaseCn"
+                        android:textAllCaps="true"
+                        android:textSize="16dp"
+                        android:textColorLink="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+                        android:linksClickable="true"
+                        ></TextView>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <Button
+                android:id="@+id/ComputerNetworking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColorLink="@color/white"
+                android:fontFamily="@font/aldrich"
+                android:drawableLeft="@drawable/ic_baseline_data_usage_24"
+                android:background="@drawable/input_bkcg"
+                android:text="computer networks"
+                android:textAllCaps="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="       "
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/mcqCn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mcqCn"
+                        android:clickable="true"
+                        android:textSize="16dp"
+                        android:textColorLink="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:textAllCaps="true"
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="               "
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/csCn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cheatsheetCn"
+                        android:textAllCaps="true"
+                        android:textSize="16dp"
+                        android:clickable="true"
+                        android:textColorLink="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+                        android:linksClickable="true"
+                        ></TextView>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <Button
+                android:id="@+id/objectOrientedProgramming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColorLink="@color/white"
+                android:fontFamily="@font/aldrich"
+                android:drawableLeft="@drawable/ic_baseline_data_usage_24"
+                android:background="@drawable/input_bkcg"
+                android:text="object_oriented Programming"
+                android:textAllCaps="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/input_bkcg"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="       "
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/objectOrientedProgrammingMcq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/object_oriented"
+                        android:textSize="16dp"
+                        android:textColorLink="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:textAllCaps="true"
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="               "
+                        android:textAllCaps="true"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+
+                        android:linksClickable="true"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/objectOrientedProgrammingCheatSheet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/object_orientedCn"
+                        android:textAllCaps="true"
+                        android:textSize="16dp"
+                        android:textColorLink="@color/white"
+                        android:fontFamily="@font/aldrich"
+                        android:paddingLeft="5dp"
+                        android:linksClickable="true"
+                        ></TextView>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
